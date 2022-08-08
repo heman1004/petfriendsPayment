@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: petfrindspayment-backend
-          image: 811288377093.dkr.ecr.us-west-2.amazonaws.com/petfrindspayment-backend:latest
-          ports:
+          image: 811288377093.dkr.ecr.us-west-2.amazonaws.com/petfriendspayment-backend:latest
+          ports: 
             - containerPort: 8080
           imagePullPolicy: Always
           env:
