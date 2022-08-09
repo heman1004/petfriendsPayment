@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: petfrindspayment-backend
+  name: petfriendspayment-backend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: petfrindspayment-backend
+      app: petfriendspayment-backend
   template:
     metadata:
       labels:
-        app: petfrindspayment-backend
+        app: petfriendspayment-backend
     spec:
       containers:
-        - name: petfrindspayment-backend
+        - name: petfriendspayment-backend
           image: 811288377093.dkr.ecr.us-west-2.amazonaws.com/petfriendspayment-backend:latest
           ports: 
             - containerPort: 8080
