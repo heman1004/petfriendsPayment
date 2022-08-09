@@ -32,7 +32,7 @@ spring:
                   serde: org.apache.kafka.common.serialization.Serdes$StringSerde
       bindings:
         event-in:
-          group: Payment
+          group: petfriendspayment
           destination: winterschoolone
           contentType: application/json
         event-out:
@@ -67,7 +67,7 @@ spring:
                   serde: org.apache.kafka.common.serialization.Serdes$StringSerde
       bindings:
         event-in:
-          group: Payment
+          group: petfriendspayment
           destination: petfriends
           contentType: application/json
         event-out:
